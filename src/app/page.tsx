@@ -131,7 +131,7 @@ export default function Home() {
 
       <section>
         <div className="lg:container m-auto px-2">
-          <div className="flex h-[500px] md:h-[700px] items-center gap-[80px]">
+          <div className="flex h-[600px] md:h-[700px] items-center gap-[80px]">
             <div className="w-[100%] md:w-[45%]">
               <h1 className="text-3xl md:text-5xl font-[roc-wide] leading-[40px] md:leading-[60px]">
                 autarc is a better way
