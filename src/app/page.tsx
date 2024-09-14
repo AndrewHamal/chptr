@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faChevronDown, faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
+import React from "react";
 
 export default function Home() {
 
@@ -56,7 +57,7 @@ export default function Home() {
               width={125}
               height={125}
               alt="logo"
-              src='https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6339884edcb06d6ae77fe900_autarc%20logo_black.svg'
+              src='https://www.chptr.house/img/chptr-logo-green.png'
             />
           </div>
 
@@ -70,8 +71,7 @@ export default function Home() {
                 <Dropdown menu={{ items }}>
                   <Link href={''}>
                     <div className="flex items-center gap-1 py-2">
-                      Products
-                      <FontAwesomeIcon icon={faChevronDown} color="rgba(88, 86, 214, 1)" width={13} />
+                      Our Story
                     </div>
                   </Link>
                 </Dropdown>
@@ -80,19 +80,17 @@ export default function Home() {
                 <Dropdown menu={{ items }}>
                   <Link href={''}>
                     <Space className="flex items-center gap-1 py-2">
-                      Solution
-                      <FontAwesomeIcon icon={faChevronDown} color="rgba(88, 86, 214, 1)" width={13} />
+                      Our Team
                     </Space>
                   </Link>
                 </Dropdown>
               </li>
-              <li>Customers</li>
+
               <li>
                 <Dropdown menu={{ items }}>
                   <Link href={''}>
                     <Space className="flex items-center gap-1 py-2">
-                      Knowledge
-                      <FontAwesomeIcon icon={faChevronDown} color="rgba(88, 86, 214, 1)" width={13} />
+                      What We Do
                     </Space>
                   </Link>
                 </Dropdown>
@@ -101,14 +99,11 @@ export default function Home() {
                 <Dropdown menu={{ items }}>
                   <Link href={''}>
                     <Space className="flex items-center gap-1 py-2">
-                      About Us
-                      <FontAwesomeIcon icon={faChevronDown} color="rgba(88, 86, 214, 1)" width={13} />
+                      Become A Vendor
                     </Space>
                   </Link>
                 </Dropdown>
               </li>
-              <li>Jobs</li>
-              <li>Rates</li>
 
               <li className="gap-2 flex">
                 <Button
@@ -120,7 +115,7 @@ export default function Home() {
                 <Button
                   href="/"
                   preset="primary"
-                  text="Book a Demo"
+                  text="Get Started"
                 />
               </li>
             </ul>
@@ -131,110 +126,107 @@ export default function Home() {
 
       <section>
         <div className="lg:container m-auto px-2">
-          <div className="flex h-[600px] md:h-[700px] items-center gap-[80px]">
-            <div className="w-[100%] md:w-[45%]">
-              <h1 className="text-3xl md:text-5xl font-[roc-wide] leading-[40px] md:leading-[60px]">
-                autarc is a better way
-                <span className="text-[#5856d6]"> to plan heat pumps</span>
+          <div className="mt-8 md:mt-20">
+            <div className="w-[80%] text-center m-auto">
+              <h1 className="text-3xl md:text-7xl font-[rec] font-[900] leading-[40px] md:leading-[80px]">
+                Gather, share, and hold
+                <span className="text-[#04784a]"> memories of loved ones lost</span>
               </h1>
+            </div>
+          </div>
 
-              <p className="mt-11 font-[400] text-gray-500 text-xl">
-                Discover the new standard for sales and planning of heat pumps. Heat load, hydraulic balancing (B) and funding application in just a few clicks.
+          <div className="mt-8 md:mt-20 relative rounded-[20px] md:rounded-[90px] overflow-hidden">
+            <div className="bg-[#000]/[0.5] hidden md:block absolute top-0 bottom-0 left-0 right-0"></div>
+            <div className="absolute bottom-20 left-20 z-[99] mr-20">
+
+              <p className="hidden md:block text-white text-4xl font-[rec]">
+                Receive priority access to Chptr and a personal onboarding experience with a team member.
               </p>
 
-              <div className="mt-11 flex flex-wrap gap-4">
-                <input type="text" className="border-[#5856d6] font-[500] text-[15px] border-[1px] h-[58px] rounded-full px-6 flex-grow"
-                  placeholder="Business email address*"
-                />
+              <div className="mt-11 hidden md:block flex flex-wrap gap-4">
                 <Button
-                  text="Book a Demo"
-                  preset="primary"
                   href="/"
-                  size="xl"
+                  preset="white"
+                  text="Get Started"
+                  size='lg'
+                />
+
+                <Button
+                  href="/"
+                  size='lg'
+                  preset="primary"
+                  text="Funeral Directors"
                 />
               </div>
-
-              <div>
-                <div className="flex flex-wrap gap-4 mt-3 items-center md:justify-around">
-                  <p className="text-[10px] uppercase font-[600] text-gray-500 flex items-center gap-1">
-                    <div className="text-[#5856d6]">
-                      <CheckCircleOutlined />
-                    </div>
-                    14-day free trial</p>
-                  <p className="text-[10px] uppercase font-[600] text-gray-500 flex items-center gap-1">
-                    <div className="text-[#5856d6]">
-                      <CheckCircleOutlined />
-                    </div>
-                    Set up in just 3 minutes</p>
-                  <p className="text-[10px] uppercase font-[600] text-gray-500 flex items-center gap-1">
-                    <div className="text-[#5856d6]">
-                      <CheckCircleOutlined />
-                    </div>
-                    Can be canceled at any time</p>
-                </div>
-              </div>
             </div>
+            <video autoPlay={true} muted={true} loop={true}>
+              <source src="https://cdn.prod.website-files.com/612ceb40385e587618b55ff1/6189a73269825d0578939693_chptr-homepage_desktop_1920x1080_FINAL-transcode.mp4" data-wf-ignore="true" />
+              <source src="https://cdn.prod.website-files.com/612ceb40385e587618b55ff1/6189a73269825d0578939693_chptr-homepage_desktop_1920x1080_FINAL-transcode.webm" data-wf-ignore="true" />
+            </video>
+          </div>
 
-            <div className="hidden md:block w-[65%]">
-              <Image
-                width={0}
-                height={0}
-                sizes="100%"
-                className="w-[100%] h-[100%] object-contain"
-                alt=""
-                src={'https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/65749b313d2e56f36107c33e_autarc-home-screen-1-min-p-1600.png'}
-              />
-            </div>
+          <div className="mt-11 md:hidden items-center justify-around flex flex-wrap gap-3">
+            <Button
+              href="/"
+              preset="secondary"
+              text="Get Started"
+            />
+
+            <Button
+              href="/"
+              preset="primary"
+              text="Funeral Directors"
+            />
           </div>
         </div>
       </section>
 
-      <section className="mb-[80px] md:mb-[130px]">
+      <section className="my-11 md:mb-[80px] md:mt-20">
         <div className="">
 
           <Marquee className="justify-around overflow-x-scroll overflow-y-hidden py-11 gap-3">
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6391e678268622418d2bfeb9_Vinci.png" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] overflow-hidden shadow-xl min-w-[130px] w-[130px] rounded-full">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/4fa562a2-948a-4c55-b480-d25c1fae3608/CHPTR-6.jpg" className="object-cover w-[100%]" alt="" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6391e67829871fbe96bc762b_Daume.png" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] shadow-xl  min-w-[130px] w-[130px] rounded-full overflow-hidden">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/79ebbfa2-5fbe-49c5-b33f-3db097e010de/Tezza-0206+2.jpg" alt="" className="object-cover w-[100%] h-[100%]" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b38e65330789e606fe27_Theodor%20Bergmann%20Berlin.svg" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] shadow-xl  min-w-[130px] w-[130px] rounded-full overflow-hidden">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/943f9e73-f5b1-4daf-be6d-5809e2cb76c6/CHPTR-1.jpg" alt="" className="object-cover w-[100%] h-[100%]" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b38fbf4bdd782aa5eac1_Vattenfall.svg" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] shadow-xl  min-w-[130px] w-[130px] rounded-full overflow-hidden">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/9dcb1d83-0bc9-4ada-b630-3a175611c85e/CD2-16.jpg" alt="" className="object-cover w-[100%] h-[100%]" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b38fbf4bdd782aa5eac1_Vattenfall.svg" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] shadow-xl  min-w-[130px] w-[130px] rounded-full overflow-hidden">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/4d603116-e420-4778-ad1b-19dfda0329aa/Tezza-4479.JPG" alt="" className="object-cover w-[100%] h-[100%]" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b48810e117cbe394c07b_mf%20mercedoil%20gmbh%20berlin.svg" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] overflow-hidden shadow-xl min-w-[130px] w-[130px] rounded-full">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/4fa562a2-948a-4c55-b480-d25c1fae3608/CHPTR-6.jpg" className="object-cover w-[100%]" alt="" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b488fd4ac778e955fc38_koster%20gmbh%20berlin%20heizung.svg" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] shadow-xl  min-w-[130px] w-[130px] rounded-full overflow-hidden">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/79ebbfa2-5fbe-49c5-b33f-3db097e010de/Tezza-0206+2.jpg" alt="" className="object-cover w-[100%] h-[100%]" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b488fd4ac778e955fc38_koster%20gmbh%20berlin%20heizung.svg" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] shadow-xl  min-w-[130px] w-[130px] rounded-full overflow-hidden">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/9dcb1d83-0bc9-4ada-b630-3a175611c85e/CD2-16.jpg" alt="" className="object-cover w-[100%] h-[100%]" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/646269795ed5193ea3b87531_hoermann-haustechnik%201.svg" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] shadow-xl  min-w-[130px] w-[130px] rounded-full overflow-hidden">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/4d603116-e420-4778-ad1b-19dfda0329aa/Tezza-4479.JPG" alt="" className="object-cover w-[100%] h-[100%]" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/646269792dc26a20312e9008_logo_wagenergie_rgb-removebg-preview%201.svg" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] shadow-xl  min-w-[130px] w-[130px] rounded-full overflow-hidden">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/4d603116-e420-4778-ad1b-19dfda0329aa/Tezza-4479.JPG" alt="" className="object-cover w-[100%] h-[100%]" />
             </div>
 
-            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] p-6 shadow-xl  min-w-[130px] w-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/66cffa26a6addc029265bd2f_nuuEnergy_logo.png" alt="" />
+            <div className="mr-7 flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] h-[130px] shadow-xl  min-w-[130px] w-[130px] rounded-full overflow-hidden">
+              <img src="https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/251eae55-3a1a-4e92-8b2f-738954fe6d95/Tezza-2573.JPG" alt="" className="object-cover w-[100%] h-[100%]" />
             </div>
 
           </Marquee>
@@ -244,56 +236,42 @@ export default function Home() {
       <section className="mb-[80px] lg:mb-[170px]">
         <div className="lg:container m-auto px-2">
           <div className="">
-            <p className="text-[13px] mb-1 font-[600] uppercase text-[#5856d6]">Benefits</p>
-            <h2 className="text-2xl md:text-4xl font-[roc-wide] text-[#160e41]">Why <span className="text-[#5856d6]">autarc?</span></h2>
+            <p className="text-[13px] mb-1 font-[600] uppercase text-[#04784a]">Mission</p>
+            <h2 className="text-2xl md:text-5xl font-[rec] font-[900] text-[#160e41]">What <span className="text-[#04784a]">chptr </span>do?</h2>
           </div>
 
           <div className="px-4 pt-11 grid md:grid-cols-3 md:pt-[125px] gap-8">
             <div className="relative">
               <div className="absolute z-[-1] top-[-15px] left-[-15px]">
-                <div className="h-[85px] w-[85px] text-[25px] bg-linear flex items-center justify-center rounded-full text-[#fff] shadow-xl shadow-[#5856d6]">
+                <div className="h-[85px] w-[85px] text-[25px] bg-linear flex items-center justify-center rounded-full text-[#fff] shadow-xl shadow-[#04784a]">
 
                 </div>
               </div>
 
               <div className="glossy-card">
-                <div className="mb-4">
-                  <div className="h-[65px] w-[65px] text-[25px] bg-[#5856d6] flex items-center justify-center rounded-full text-[#fff] shadow-xl shadow-[#5856d6]/[0.5]">
-                    <ClockCircleOutlined color="#fff" />
-                  </div>
-                </div>
 
-                <h3 className="font-[roc-wide] text-[#160e41] text-2xl">The fastest way to data</h3>
+                <h3 className="font-[rec] font-[900] text-[#160e41] text-2xl">About us</h3>
 
-                <p className="mt-2 text-gray-500">With autarc, you can quickly access via 600 relevant house data thanks to artificial intelligence. In just 10 minutes enter all necessary information, supplemented with pictures at the customer's site. This step can also be taken over by inexperienced colleagues.</p>
+                <p className="mt-2 text-gray-600">Chptr is a mobile-first memorialization platform to gather, share, and hold memories for a lost loved one’s life for generations to come.</p>
               </div>
             </div>
 
             <div className="md:mt-[-80px]">
               <div className="glossy-card relative">
-                <div className="mb-4">
-                  <div className="h-[65px] w-[65px] text-[25px] bg-[#5856d6] flex items-center justify-center rounded-full text-[#fff] shadow-xl shadow-[#5856d6]/[0.5]">
-                    <FontAwesomeIcon icon={faShieldAlt} />
-                  </div>
-                </div>
 
-                <h3 className="font-[roc-wide] text-[#160e41] text-2xl">Higher offer quality
+
+                <h3 className="font-[rec] font-[900] text-[#160e41] text-2xl">Technology
                 </h3>
 
-                <p className="mt-2 text-gray-500">Through the data Does quality increase your offers by 90%. With precise and comprehensive information, you can offer tailor-made solutions. For you, this means: more successful deals And a quick contract processing.</p>
+                <p className="mt-2 text-gray-600">Manage attendance, send announcements, hire vendors, track point systems, and more through the Chptr platform.</p>
               </div>
             </div>
 
             <div className="glossy-card relative">
-              <div className="mb-4">
-                <div className="h-[65px] w-[65px] text-[25px] bg-[#5856d6] flex items-center justify-center rounded-full text-[#fff] shadow-xl shadow-[#5856d6]/[0.5]">
-                  <LockOutlined />
-                </div>
-              </div>
 
-              <h3 className="font-[roc-wide] text-[#160e41] text-2xl">No plant failures</h3>
+              <h3 className="font-[rec] font-[900] text-[#160e41] text-2xl">Service</h3>
 
-              <p className="mt-2 text-gray-500">Wrongly dimensioned or timed heat pumps are a thing of the past. Our precise analysis enables a optimal system planning. The result is powerful, efficient heat pumps that are precisely tailored to the needs of your customers. For you, that means: fewer plant failures and therefore happier customers.</p>
+              <p className="mt-2 text-gray-600">Executive guidance, vendor vetting, service hotline, and software training with your Chptr Team. </p>
             </div>
 
 
@@ -304,32 +282,40 @@ export default function Home() {
       <section className="mb-[80px] md:mb-[150px]">
         <div className="lg:container m-auto px-2">
           <div className="">
-            <p className="text-[13px] mb-1 font-[600] uppercase text-[#5856d6]">Solution</p>
-            <h2 className="text-2xl md:text-4xl font-[roc-wide] text-[#160e41]">autarc has what you need. <br /> <span className="text-[#5856d6]">The most efficient planning and sales process.</span></h2>
+            {/* <p className="text-[13px] mb-1 font-[600] uppercase text-[#04784a]">Solution</p> */}
+            <h2 className="text-2xl md:text-5xl font-[rec] font-[900] text-[#160e41]">A community that celebrates and <br /> <span className="text-[#04784a]">honors the lives of those we’ve lost</span></h2>
           </div>
 
           <div className="flex gap-5 md:gap-20 mt-11">
             <div className="relative">
-              <div className="absolute left-[50%] translate-x-[-50%] shadow bg-[#fafafa] w-[15px] h-[15px] border-[#5856d6] border-[4px] rounded-full"></div>
-              <div className="h-[100%] w-[2px] bg-[#0505050f]"></div>
+              <div className="absolute left-[50%] translate-x-[-50%] shadow bg-[#fafafa] w-[15px] h-[15px] border-[#04784a] border-[4px] rounded-full"></div>
+              <div className="h-[100%] w-[2px] bg-[#04784a]/[0.2]"></div>
 
-              <div className="absolute bottom-0 left-[50%] translate-x-[-50%] shadow bg-[#fafafa] w-[15px] h-[15px] border-[#5856d6]  border-[4px] rounded-full"></div>
+              <div className="absolute bottom-0 left-[50%] translate-x-[-50%] shadow bg-[#fafafa] w-[15px] h-[15px] border-[#04784a]  border-[4px] rounded-full"></div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-11 py-[80px] flex-grow">
+            <div className="grid md:grid-cols-2 gap-20 py-[30px] flex-grow">
               <div className="my-auto">
                 <div className="self-start">
-                  <p className="text-[13px] mb-1 font-[600] uppercase text-[#5856d6]">
-                    Heat pump check and customer portal</p>
-                  <h3 className="text-2xl uppercase font-[roc-wide] text-[#160e41]">Quick aptitude test, modern communication</h3>
-                  <div className="h-[5px] w-[60px] border-b-[3px] border-[#5856d6]"></div>
+                  <h3 className="text-2xl uppercase font-[rec] font-[900] text-[#160e41]">WHO WE ARE.</h3>
+                  <div className="h-[5px] w-[60px] border-b-[3px] border-[#04784a]"></div>
                 </div>
 
                 <p className="mt-5 text-gray-500">
-                  In few minutes Does your customer find out whether a heat pump is suitable for their home. He then gets access to your customer portal, the hub for all communication. From the initial assessment up to the final installation keep your customers up to date.
+                  We are a service-oriented operations management company built by SEC Greeks. <br /> <br />
+
+                  We are here to elevate the Greek Life Experience and Empower Young Leaders.
                 </p>
 
-                <div className="mt-5">
+                <div className="mt-8">
+                  <Button
+                    href="/"
+                    preset="secondary"
+                    text="Get Started"
+                  />
+                </div>
+
+                {/* <div className="mt-5">
                   <ul>
                     <li className="flex item-center gap-2 mb-3">
                       <div className="scale-[0.8] bg-[#5856d6]/[0.3] text-white w-[25px] h-[25px] p-1 rounded-full flex items-center justify-center">
@@ -359,16 +345,16 @@ export default function Home() {
                       <p className="text-[14px] text-gray-500">Accessible 24/7 from all devices</p>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <div>
                 <Image
                   width={0}
                   height={0}
-                  className="w-[100%]"
+                  className="w-[100%] h-[400px] object-cover rounded-[20px]"
                   sizes="100%"
                   alt=""
-                  src={'https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/65749b3162da9b852b633038_autarc-home-screen-2-min.png'}
+                  src={'https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/74a93b55-d74c-4ca0-a4b0-0f06ead0264c/rUyfCQuA.jpeg'}
                 />
               </div>
             </div>
@@ -376,64 +362,39 @@ export default function Home() {
 
           <div className="flex gap-5 md:gap-20">
             <div className="relative">
-              <div className="h-[100%] w-[2px] bg-[#0505050f]"></div>
-              <div className="absolute bottom-0 left-[50%] translate-x-[-50%] shadow bg-[#fafafa] w-[15px] h-[15px] border-[#5856d6]  border-[4px] rounded-full"></div>
+              <div className="h-[100%] w-[2px] bg-[#04784a]/[0.2]"></div>
+              <div className="absolute bottom-0 left-[50%] translate-x-[-50%] shadow bg-[#fafafa] w-[15px] h-[15px] border-[#04784a]  border-[4px] rounded-full"></div>
             </div>
-            <div className="grid md:grid-cols-2 gap-11 py-[80px]">
+            <div className="grid md:grid-cols-2 gap-20 py-[30px]">
               <div>
                 <Image
                   width={0}
                   height={0}
-                  className="w-[100%]"
+                  className="w-[100%] overflow-hidden h-[400px] object-top object-cover rounded-[20px]"
                   sizes="100%"
                   alt=""
-                  src={'https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/65749b3163cd25a8d73ccae9_autarc-home-screen-3-min.png'}
+                  src={'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c3/82/f6/c382f6c2-2113-86f8-d3a6-37a194d427fb/50918558-d950-4435-be1f-b2402f9f3388_1303.png/460x0w.webp'}
                 />
               </div>
 
               <div className="my-auto">
                 <div className="self-start">
-                  <p className="text-[13px] mb-1 font-[600] uppercase text-[#5856d6]">
-                    On-site visit</p>
-                  <h3 className="text-2xl uppercase font-[roc-wide] text-[#160e41]">Input and calculation in one step</h3>
-                  <div className="h-[5px] w-[60px] border-b-[3px] border-[#5856d6]"></div>
+                  <h3 className="text-2xl uppercase font-[rec] font-[900] text-[#160e41]">Check Our technology</h3>
+                  <div className="h-[5px] w-[60px] border-b-[3px] border-[#04784a]"></div>
                 </div>
 
                 <p className="mt-5 text-gray-500">
-                  In just 15 minutes Do you get a result for Heat load, sound emissions, heating surface design and hydraulic balancing (B). In addition, a suitable offer is generated. Means for you: less time for data recording, more time to sell the plant.
+                  From daily operations to administrative tasks, including announcements, points, member directory, event scheduling, and vendor management - Chptr is one central hub!
                 </p>
 
-                <div className="mt-5">
-                  <ul>
-                    <li className="flex item-center gap-2 mb-3">
-                      <div className="scale-[0.8] bg-[#5856d6]/[0.3] text-white w-[25px] h-[25px] p-1 rounded-full flex items-center justify-center">
-                        <FontAwesomeIcon icon={faCheck} size='xs' color="#5856d6" />
-                      </div>
-                      <p className="text-[14px] text-gray-500">Mobile availability on tablet/smartphone</p>
-                    </li>
-
-                    <li className="flex item-center gap-2 mb-3">
-                      <div className="scale-[0.8] bg-[#5856d6]/[0.3] text-white w-[25px] h-[25px] p-1 rounded-full flex items-center justify-center">
-                        <FontAwesomeIcon icon={faCheck} size='xs' color="#5856d6" />
-                      </div>
-                      <p className="text-[14px] text-gray-500">Room capture with 3D scanner</p>
-                    </li>
-
-                    <li className="flex item-center gap-2 mb-3">
-                      <div className="scale-[0.8] bg-[#5856d6]/[0.3] text-white w-[25px] h-[25px] p-1 rounded-full flex items-center justify-center">
-                        <FontAwesomeIcon icon={faCheck} size='xs' color="#5856d6" />
-                      </div>
-                      <p className="text-[14px] text-gray-500">Automatic radiator detection (beta)</p>
-                    </li>
-
-                    <li className="flex item-center gap-2">
-                      <div className="scale-[0.8] bg-[#5856d6]/[0.3] text-white w-[25px] h-[25px] p-1 rounded-full flex items-center justify-center">
-                        <FontAwesomeIcon icon={faCheck} size='xs' color="#5856d6" />
-                      </div>
-                      <p className="text-[14px] text-gray-500">All calculations in one pdf. Report</p>
-                    </li>
-                  </ul>
+                <div className="mt-8">
+                  <Button
+                    href="/"
+                    preset="secondary"
+                    text="Get Started"
+                  />
                 </div>
+
               </div>
 
             </div>
@@ -441,61 +402,37 @@ export default function Home() {
 
           <div className="flex gap-5 md:gap-20">
             <div className="relative">
-              <div className="h-[100%] w-[2px] bg-[#0505050f]"></div>
-              <div className="absolute bottom-0 left-[50%] translate-x-[-50%] shadow bg-[#fafafa] w-[15px] h-[15px] border-[#5856d6]  border-[4px] rounded-full"></div>
+              <div className="h-[100%] w-[2px] bg-[#04784a]/[0.2]"></div>
+              <div className="absolute bottom-0 left-[50%] translate-x-[-50%] shadow bg-[#fafafa] w-[15px] h-[15px] border-[#04784a]  border-[4px] rounded-full"></div>
             </div>
-            <div className="grid md:grid-cols-2 gap-11 py-[80px]">
+            <div className="grid md:grid-cols-2 gap-11 py-[30px]">
               <div className="my-auto">
                 <div className="self-start">
-                  <p className="text-[13px] mb-1 font-[600] uppercase text-[#5856d6]">Specialist partner portal</p>
-                  <h3 className="text-2xl uppercase font-[roc-wide] text-[#160e41]">One software for everything related to the heat pump</h3>
-                  <div className="h-[5px] w-[60px] border-b-[3px] border-[#5856d6]"></div>
+                  <h3 className="text-2xl uppercase font-[rec] font-[900] text-[#160e41]">OUR MISSION BECAME CLEAR…</h3>
+                  <div className="h-[5px] w-[60px] border-b-[3px] border-[#04784a]"></div>
                 </div>
 
                 <p className="mt-5 text-gray-500">
                   Everything is managed centrally in the specialist partner portal. It allows the generation of Reports, processing of Funding, the creation of VDZ forms, the startup of plants and maintenancies.
                 </p>
 
-                <div className="mt-5">
-                  <ul>
-                    <li className="flex item-center gap-2 mb-3">
-                      <div className="scale-[0.8] bg-[#5856d6]/[0.3] text-white w-[25px] h-[25px] p-1 rounded-full flex items-center justify-center">
-                        <FontAwesomeIcon icon={faCheck} size='xs' color="#5856d6" />
-                      </div>
-                      <p className="text-[14px] text-gray-500">Collaborate with teammates</p>
-                    </li>
-
-                    <li className="flex item-center gap-2 mb-3">
-                      <div className="scale-[0.8] bg-[#5856d6]/[0.3] text-white w-[25px] h-[25px] p-1 rounded-full flex items-center justify-center">
-                        <FontAwesomeIcon icon={faCheck} size='xs' color="#5856d6" />
-                      </div>
-                      <p className="text-[14px] text-gray-500">Generating heat pump reports</p>
-                    </li>
-
-                    <li className="flex item-center gap-2 mb-3">
-                      <div className="scale-[0.8] bg-[#5856d6]/[0.3] text-white w-[25px] h-[25px] p-1 rounded-full flex items-center justify-center">
-                        <FontAwesomeIcon icon={faCheck} size='xs' color="#5856d6" />
-                      </div>
-                      <p className="text-[14px] text-gray-500">Planning of systems including heating surfaces</p>
-                    </li>
-
-                    <li className="flex item-center gap-2">
-                      <div className="scale-[0.8] bg-[#5856d6]/[0.3] text-white w-[25px] h-[25px] p-1 rounded-full flex items-center justify-center">
-                        <FontAwesomeIcon icon={faCheck} size='xs' color="#5856d6" />
-                      </div>
-                      <p className="text-[14px] text-gray-500">Funding and VDZ forms</p>
-                    </li>
-                  </ul>
+                <div className="mt-8">
+                  <Button
+                    href="/"
+                    preset="secondary"
+                    text="Get Started"
+                  />
                 </div>
+
               </div>
               <div>
                 <Image
                   width={0}
                   height={0}
-                  className="w-[100%]"
+                  className="w-[100%] overflow-hidden h-[400px] object-top object-cover rounded-[20px]"
                   sizes="100%"
                   alt=""
-                  src={'https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/65749b314ee49de84aad0baa_autarc-home-screen-4-min.png'}
+                  src={'https://images.squarespace-cdn.com/content/v1/663954f100cb606cd13af00d/9d8431ea-ef5f-4172-8024-0f8dbed5534f/1E8A9991-Enhanced-NR.JPG'}
                 />
               </div>
             </div>
@@ -506,141 +443,80 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-[80px] md:my-[140px]">
-        <div className="lg:container m-auto px-2">
-
-          <div className="text-center">
-            <h2 className="text-4xl font-[roc-wide] text-[#160e41]">Our software works with all manufacturers.</h2>
-          </div>
-
-          <div className="flex flex-wrap justify-center py-11 gap-5">
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/643a79d582485650889931f1_Danfoss.svg" alt="" />
-            </div>
-
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/643a79d54eaafc68f6aa619c_IMI%20Heimeier.svg" alt="" />
-            </div>
-
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/643a79d5fb6ee1d0f1b04b25_Oventrop.svg" alt="" />
-            </div>
-
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/64628132380e5ecaac062cd8_Resideo%20Honeywell.svg" alt="" />
-            </div>
-
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b66ad7095943cebd8e6f_Viessmann.svg" alt="" />
-            </div>
-
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b65c8695df776be3aa90_Vaillant.svg" alt="" />
-            </div>
-
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b65c121acb6a85783b4a_Stiebel%20Eltron.svg" alt="" />
-            </div>
-
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b65cfc6d39159e072dac_Samsung.svg" alt="" />
-            </div>
-
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b65cfc6d39159e072da0_Buderus.svg" alt="" />
-            </div>
-
-            <div className="flex items-center justify-center shadow-[#000]/[0.05] bg-[#fff] p-6 shadow-xl min-w-[130px] w-[130px] h-[130px] min-h-[130px] rounded-full">
-              <img src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6491b65c4793c63f2747af30_Daikin.svg" alt="" />
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-[80px] md:mb-[150px]">
-        <div className="lg:container m-auto px-2">
-          <div className="text-center pb-11">
-            <h2 className="text-4xl font-[roc-wide] text-[#160e41]">What our customers are saying:</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-9 md:gap-5 pt-6">
-
-            <div className="glossy-card">
-              <Image src={require('./assets/quote.svg')} width={70} height={70} alt="" />
-
-              <p className="mt-5">“Since we've been using autarc, we've been driving We no longer go directly to every customer. Through the Qualification During the heat pump check, we only deal with customers who are really interested in a heat pump.”</p>
-
-              <div className="flex gap-4 items-center mt-8">
-                <img className="w-[60px] h-[60px] rounded-full border-[2px] border-[#5856d6]" src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6569c64166880e76db5e38ca_Ellipse%20392.svg" alt="" />
-
-                <div className="leading-[19px]">
-                  <p className="font-[500]">Philip Walter</p>
-                  <p className="text-[#30394e80] text-[13px] leading-[14px]">Managing Director at Thomas Mehner Haustechnik</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="glossy-card">
-              <Image src={require('./assets/quote.svg')} width={70} height={70} alt="" />
-
-              <p className="mt-5">“With autarc, we can implement method B in Create under 1 hour, much faster than our previous solutions. We can see that our customers are impressed that everything comes from a single source.”</p>
-
-              <div className="flex gap-4 items-center mt-8">
-                <img className="w-[60px] h-[60px] rounded-full border-[2px] border-[#5856d6]" src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6569ff3c2615a40b667d1a1d_Group%20482130.svg" alt="" />
-
-                <div className="leading-[17px]">
-                  <p className="font-[500]">Stefan Möllenhoff</p>
-                  <p className="text-[#30394e80] text-[13px]">Executive at Vinci Energies</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-[80px] md:mb-[150px]">
+      <section className="mb-[80px]">
         <div className="lg:container m-auto px-2">
           <div className="mb-9">
-            <p className="text-[13px] mb-1 font-[600] uppercase text-[#5856d6]">Testimonials</p>
-            <h2 className="text-2xl md:text-4xl font-[roc-wide] text-[#160e41]">What our customers say. <br /> <span className="text-[#5856d6]">How Daume plans 270 heat pumps per year using Autarc.</span></h2>
+            <h2 className="text-2xl md:text-5xl font-[rec] font-[900] text-[#160e41]">Revolutionizing Memorial Services with <br /> <span className="text-[#04784a]">Live TV Broadcasts</span></h2>
+            <p className="mt-3 text-[20px] text-gray-500">Partner with us to broadcast a loved one’s legacy, reaching hearts beyond just those present.</p>
           </div>
 
-          <div>
-            <iframe src="https://www.youtube.com/embed/mEkOYnmscdw?rel=0&controls=1&autoplay=1&mute=1&start=0" className="w-[100%] h-[240px] md:h-[600px] rounded-[10px]"></iframe>
+          <div className="grid md:grid-cols-2 items-center gap-20">
+            <div>
+              <div>
+                <h2 className="text-2xl md:text-4xl font-[rec] font-[900] text-[#160e41]">A new dimension to honoring loved ones</h2>
+                <p className="mt-3 text-[18px] text-gray-500">Our exclusive partnership with local TV stations introduces a new dimension to honoring loved ones. By airing listings and memorial tributes live and online, we offer a modern alternative to outdated obituaries, bringing communities together in celebration and remembrance.</p>
+
+                <div className="mt-11">
+                  <Button
+                    href="/"
+                    preset="primary"
+                    text="Get In Touch"
+                    size="wide"
+                  />
+                </div>
+              </div>
+
+            </div>
+            <div>
+              <div>
+                <iframe src="https://player.vimeo.com/video/956586066?app_id=122963&referrer=https%3A%2F%2Fwww.chptr.com%2F" className="w-[100%] h-[240px] md:h-[500px] rounded-[10px]"></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="mb-[80px] md:mb-[150px]">
-        <div className="lg:container m-auto">
-          <div className="grid md:grid-cols-2 gap-11">
-            <div className="md:w-[80%] my-auto px-2">
-              <h4 className="font-[500] font-[roc-wide] text-3xl">Would you like to stay up to date?</h4>
-              <p className="mb-4">Sign up for our newsletter</p>
+      <section className="mb-[80px]">
+        <div className="lg:container m-auto px-2">
+          <div className="text-center pb-11">
+            <h2 className="text-5xl font-[rec] font-[900] text-[#160e41] capitalize">Word on the Street</h2>
+          </div>
 
-              <input type="text" className="border-[#5856d6] w-[100%] mb-3 font-[500] text-[14px] border-[1px] h-[45px] rounded-full px-6 flex-grow" placeholder="First name*" />
-              <input type="text" className="border-[#5856d6] w-[100%] mb-3 font-[500] text-[14px] border-[1px] h-[45px] rounded-full px-6 flex-grow" placeholder="Last name*" />
-              <input type="text" className="border-[#5856d6] w-[100%] mb-6 font-[500] text-[14px] border-[1px] h-[45px] rounded-full px-6 flex-grow" placeholder="Business email address*" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-9 md:gap-5 pt-6">
 
-              <Button
-                href="/"
-                size="wide"
-                preset="primary"
-                text='Subscribe'
-              />
+            <div className="glossy-card">
+              <Image src={require('./assets/quote.svg')} width={70} height={70} alt="" />
+
+              <p className="mt-5 text-[16px] text-gray-500">“Chptr has not only changed the way I plan events but has lessened the burden of planning events for 700+ people and also being a college student! Chptr is a company that has shown success in consistent communication with Greek Life members and always has a creative new idea. Chptr can guide me, advise me and they understand what I am doing but above all else the team desires to create a personal connection with me. The team is ambitious, dependable and intentional. I couldn’t have had such a huge success with all my events this past semester without Chptr. This company is going to do amazing things and I encourage every greek life chapter to partner with Chptr!”</p>
+
+              <div className="flex gap-4 items-center mt-8">
+                <div className="leading-[19px]">
+                  <p className="text-[16px] font-[rec] font-[900] text-[#04784a]">VP OF EVENT PLANNING, AGD</p>
+                </div>
+              </div>
             </div>
-            <div className="bg-linear p-10">
-              <h4 className="font-[500] font-[roc-wide] text-3xl text-white">Frequently asked questions</h4>
-              <p className="text-[#fff]/[0.8]">We can help answer questions and resolve issues. Have a look at our frequently asked questions, send us a message or give us a call.</p>
 
-              <div className="mt-7">
-                <Button
-                  href="/"
-                  color="white"
-                  preset="secondary"
-                  text='Learn More'
-                />
+            <div className="glossy-card">
+              <Image src={require('./assets/quote.svg')} width={70} height={70} alt="" />
+
+              <p className="mt-5 text-[16px] text-gray-500">“If I were to tell another recruitment chair about Chptr, the first thing I would say is USE THEM! Chptr has checked all the boxes for me when connecting with vendors and planning events. My experience so far with Chptr has been amazing! Chptr has been an encouraging and positive resource for me while planning a recruitment. Having them as a source for contacting vendors in Auburn has been such a blessing! I have loved everyone I have worked with at Chptr and have been so impressed by their dedication and desire to help me plan the best recruitment possible!”</p>
+
+              <div className="flex gap-4 items-center mt-8">
+                <div className="leading-[17px]">
+                  <p className="text-[16px] font-[rec] text-[#04784a] font-[900]">RECRUITMENT CHAIR,  AGD</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="glossy-card">
+              <Image src={require('./assets/quote.svg')} width={70} height={70} alt="" />
+
+              <p className="mt-5 text-[16px] text-gray-500">“Chptr has been a great resource for our executive board and members. Everything you could want is in one place. Chptr has allowed me oversee all different positions and parts of the sorority in an easier way. I am able to check on attendance, excuses, Panhellenic points, social and sisterhood events, and invoices all at once. We have seen better communication and organization since working with Chptr. My experience has been nothing short of amazing as I have watched this app and organization grow. It has taken lots of stress away from the job while still allowing me to be actively apart of every aspect.”</p>
+
+              <div className="flex gap-4 items-center mt-8">
+                <div className="leading-[17px]">
+                  <p className="text-[16px] font-[rec] text-[#04784a] font-[900]">PRESIDENT, PHI MU</p>
+                </div>
               </div>
             </div>
           </div>
@@ -656,92 +532,50 @@ export default function Home() {
                   width={125}
                   height={125}
                   alt="logo"
-                  src='https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/6339884edcb06d6ae77fe900_autarc%20logo_black.svg'
+                  src='https://www.chptr.house/img/chptr-logo-green.png'
                 />
 
                 <a href="https://apps.apple.com/app/autarc/id6464311183" className="block pt-7 pb-3" >
-                  <Image height={30} src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/656a05f75545a6a3e2b24fab_Group%20482167.svg" width="169" alt="" />
+                  <Image height={30} className="max-h-[55px] object-cover" src="https://cdn.prod.website-files.com/612ceb40385e587618b55ff1/62cc57fafeae6aca220c5b2e_Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" width="139" alt="" />
                 </a>
 
                 <a href="https://app.autarc.energy/login" className="w-inline-block" >
-                  <Image height={30} src="https://cdn.prod.website-files.com/62ed3f380e99ef9567e1d072/656a05f7d8a01b8c1b94e2a4_Group%20482166.svg" width="169" alt="" />
+                  <Image className="max-h-[55px] object-cover" height={30} src="https://cdn.prod.website-files.com/612ceb40385e587618b55ff1/6522f629bc6595a760df6208_google-play-badge-logo.svg" width="139" alt="" />
                 </a>
-
-                <div className="mt-8">
-                  <Button
-                    href="/demo"
-                    preset="primary"
-                    text="Request Demo"
-                  />
-                </div>
               </div>
 
               <div>
-                <h4 className="text-[16px] font-[500] text-[#30394e] mb-2">Products</h4>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 flex items-center gap-2">
+              </div>
+
+              <div>
+
+                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
                   <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Heat pump check
+                  Our Story</Link>
+                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
+                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
+                  Our Team</Link>
+                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
+                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
+                  What We Do</Link>
+
+                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
+                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
+                  Become A Vendor
                 </Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Customer portal</Link>
 
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Quotation tool</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  LiDAR scan</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Heat load calculation</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Hydraulic balancing</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Heating surface design</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Funding service</Link>
               </div>
 
               <div>
-                <h4 className="text-[16px] font-[500] text-[#30394e] mb-2">More Products</h4>
                 <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
                   <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  For young companies</Link>
+                  Privacy</Link>
                 <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
                   <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  For established companies</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Hydraulic balancing</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Heating surface design</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Funding service</Link>
-              </div>
-
-              <div>
-                <h4 className="text-[16px] font-[500] text-[#30394e] mb-2">Resources</h4>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Book a demo</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Customers</Link>
+                  Contact Us</Link>
                 <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
                   <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
                   Support</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Heating surface design</Link>
-                <Link href='#' className="font-[400] text-[#30394e] text-[14px] mb-3 block flex items-center gap-2">
-                  <Image src={require('./assets/arrow.svg')} alt="" width={15} height={15} />
-                  Funding service</Link>
               </div>
             </div>
           </div>
@@ -749,8 +583,7 @@ export default function Home() {
 
         <div className="bg-[#f0f5fc]">
           <div className="lg:container m-auto py-4 px-2">
-            <p className="text-[#bab4dd] text-[12px] font-[500]">autarc GmbH © 2024.
-              All rights reserved</p>
+            <p className="text-[#bab4dd] text-[12px] font-[500]">© chptr Social Management | All right reserved</p>
           </div>
         </div>
       </footer>

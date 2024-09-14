@@ -15,6 +15,13 @@
 }
 
 @font-face {
+  font-family: 'rec';
+  src: url('./fonts/Recoleta.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'roc-wide';
   src: url('./fonts/rocgroteskwide-extrabold.otf');
   font-weight: normal;
@@ -53,11 +60,11 @@ nav li {
 }
 
 nav li:hover {
-  color: rgba(88, 86, 214, 1);
+  color: #04784a;
 }
 
 nav .active {
-  border-bottom: 3px solid rgba(88, 86, 214, 1);
+  border-bottom: 3px solid rgba(4, 120, 74, 1);
   color: rgba(88, 86, 214, 1);
 }
 
@@ -66,7 +73,7 @@ nav .active {
 }
 
 .btn-secondary:hover {
-  background-color: rgba(88, 86, 214, 0.8);
+  background-color: rgba(4, 120, 74, 0.8);
   color: #fff;
 }
 
@@ -76,29 +83,43 @@ nav .active {
   padding-left: 22px;
   padding-right: 22px;
   border-radius: 50px;
+  border-width: 0;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  background: -moz-linear-gradient(70deg, rgba(88, 86, 214, 0.8) 0%, #5856d6 100%);
-  background: -webkit-linear-gradient(70deg, rgba(88, 86, 214, 0.8) 0%, rgba(88, 86, 214, 1) 100%);
-  background: linear-gradient(70deg, rgba(88, 86, 214, 0.8) 0%, rgba(88, 86, 214, 1) 100%);
+  background: -moz-linear-gradient(70deg, rgba(4, 120, 74, 0.8) 0%, #04784a 100%);
+  background: -webkit-linear-gradient(70deg, rgba(4, 120, 74, 0.8) 0%, rgba(4, 120, 74, 1) 100%);
+  background: linear-gradient(70deg, rgba(4, 120, 74, 0.8) 0%, rgba(4, 120, 74, 1) 100%);
 }
 
 .bg-linear {
-  background: linear-gradient(70deg, rgba(88, 86, 214, 0.8) 0%, rgba(88, 86, 214, 1) 100%);
+  background: linear-gradient(70deg, rgba(4, 120, 74, 0.8) 0%, rgba(4, 120, 74, 1) 100%);
 }
 
 .btn-secondary {
   transition: all .2s linear;
-  border: 1px solid rgba(88, 86, 214, 0.8);
+  border: 1px solid rgba(4, 120, 74, 0.8);
   height: 43px;
   padding-left: 22px;
   padding-right: 22px;
   border-radius: 50px;
-  color: rgba(88, 86, 214, 0.8);
+  color: rgba(4, 120, 74, 0.8);
   font-size: 14px;
   font-weight: 600;
 }
+
+.btn-white {
+  transition: all .2s linear;
+  border: 1px solid #fff;
+  height: 43px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 
 .color-white {
   border: 1px solid #fff;

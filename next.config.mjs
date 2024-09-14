@@ -8,6 +8,23 @@ const nextConfig = {
                 port: '',
                 pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'is1-ssl.mzstatic.com',
+                port: '',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'www.chptr.house',
+                port: '',
+                pathname: '/**',
+            }, {
+                protocol: 'https',
+                hostname: 'images.squarespace-cdn.com',
+                port: '',
+                pathname: '/**',
+            }
         ],
     },
 };
